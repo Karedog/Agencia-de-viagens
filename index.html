@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
 </head>
 <body>
         <header>
-            <div>
+            <div class="layout-padrao">
                 <img src="./assets/imagens/local-logo.png" alt="Logotipo da Agência de Viagens com ícone de local">
                 <h1>Agência de Viagens</h1>
             </div>
         </header>
         <main>
             <section id="secao-form">
-                <div>
+                <div class="layout-padrao caixa-form">
                     <div class="form-header">
                         <img src="./assets/imagens/aviao.png" alt="icone de avião">
                         <p>Solicite um orçamento</p>
@@ -32,10 +34,14 @@
                             </div>
                             <div class="form-dados-viagem">
                                 <div class="dados-viagem-data">
-                                    <label for="data-ida">Data da ida</label>
-                                    <input type="date" id="data-ida"required>
-                                    <label for="data-volta">Data da volta</label>
-                                    <input type="date" id="data-volta" required>
+                                    <div>
+                                        <label for="data-ida">Data da ida</label>
+                                        <input type="date" id="data-ida"required>
+                                    </div>
+                                    <div>
+                                        <label for="data-volta">Data da volta</label>
+                                        <input type="date" id="data-volta" required>
+                                    </div>
                                 </div>
                                 <div class="dados-viagem-local">
                                     <label for="origem">Origem</label>
@@ -48,9 +54,11 @@
                                     </select>
                                     <label for="destino">Destino</label>
                                     <select name="destino" id="destino" required>
-                                        <option value="" selected disabled>Indo para</option>
+                                        <option value="" selected disabled>Partindo de</option>
                                         <option value="rj">Rio de Janeiro</option>
                                         <option value="sp">São Paulo</option>
+                                        <option value="am">Manaus</option>
+                                        <option value="ma">Maranhão</option>
                                     </select>
                                 </div>
                             </div>
@@ -80,6 +88,8 @@
                 </div>
             </section>
             <section id="secao-ofertas">
+            <div class="layout-padrao">
+
                 <h2>Ofertas</h2>
                 <p>Com até <span>50%</span> de desconto.</p>
                 <div class="caixa-ofertas">
@@ -105,8 +115,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </section>
             <section id="secao-natureza">
+                <div class="layout-padrao">
                 <h2>Explore a Natureza</h2>
                 <p>Viaje conosco e veja o melhor que a natureza tem a oferecer.</p>
                 <div class="caixa-natureza">
@@ -128,7 +140,7 @@
             </section>
         </main>
         <footer>
-            <div class="rodape-caixa">
+            <div class="rodape-caixa layout-padrao">
                 <div class="caixa-contato">
                     <h2>Contato</h2>
                     <div>

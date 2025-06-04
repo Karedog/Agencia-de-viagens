@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.layout-padrao{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+}
+header div{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding:0.5em;
+    font-size: 15px;
+    
+}
+header div img, #secao-form .form-header img{
+    height: 90%;
+}
+
+header div h1{
+    color: rgb(40, 40, 126);
+}
+#secao-form{
+    padding: 3em 0;
+    background-image: url('/assets/imagens/bahia.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#secao-form .caixa-form{
+    background-color: white !important;
+}
+#secao-form .form-header{
+    background-color: rgb(40, 40, 126);
+    padding:0.7em;
+    display: flex;
+    height: 40px;
+    color: white;
+    gap: 10px;  
+    justify-content: center; 
+    font-weight: 600;
+}
+#secao-form .form-header img{
+    rotate: 315deg;
+}
+#secao-form .form-body form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+#secao-form form label, form input, form select{
+    line-height: 100%;
+    height: 2.5em;
+    vertical-align: middle;
+}
+form select{
+    height: 2em;
+}
+#secao-form form .form-dados-usuario{
+    display: flex;
+    flex-direction: column;
+}
+#secao-form form .form-dados-viagem{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#secao-form form .dados-viagem-data{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+#secao-form form .dados-viagem-data div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
