@@ -44,42 +44,62 @@
                                     </div>
                                 </div>
                                 <div class="dados-viagem-local">
-                                    <label for="origem">Origem</label>
-                                    <select name="origem" id="origem" required>
-                                        <option value="" selected disabled>Partindo de</option>
-                                        <option value="rj">Rio de Janeiro</option>
-                                        <option value="sp">São Paulo</option>
-                                        <option value="am">Manaus</option>
-                                        <option value="ma">Maranhão</option>
-                                    </select>
-                                    <label for="destino">Destino</label>
-                                    <select name="destino" id="destino" required>
-                                        <option value="" selected disabled>Partindo de</option>
-                                        <option value="rj">Rio de Janeiro</option>
-                                        <option value="sp">São Paulo</option>
-                                        <option value="am">Manaus</option>
-                                        <option value="ma">Maranhão</option>
-                                    </select>
+                                    <div>
+                                        <label for="origem">Origem</label>
+                                        <select name="origem" id="origem" required>
+                                            <option value="" selected disabled>Partindo de</option>
+                                            <option value="rj">Rio de Janeiro</option>
+                                            <option value="sp">São Paulo</option>
+                                            <option value="am">Manaus</option>
+                                            <option value="ma">Maranhão</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="destino">Destino</label>
+                                        <select name="destino" id="destino" required>
+                                            <option value="" selected disabled>Partindo de</option>
+                                            <option value="rj">Rio de Janeiro</option>
+                                            <option value="sp">São Paulo</option>
+                                            <option value="am">Manaus</option>
+                                            <option value="ma">Maranhão</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-dados-adicionais">
                                 <div class="dados-adicionais-infantil">
                                     <p>Quarto com cama infantil</p>
-                                    <input type="radio" id="sim" name="quarto-cama-infantil" value="true">
-                                    <label for="sim">Sim</label>
-                                    <input type="radio" id="nao" name="quarto-cama-infantil" value="false">
-                                    <label for="nao">Não</label>
+                                    <div class="caixa-infantil-dados">
+                                        <div class="infantil-dado">
+                                            <input type="radio" id="sim" name="quarto-cama-infantil" value="true">
+                                            <label for="sim">Sim</label>
+                                        </div>
+                                        <div class="infantil-dado">
+                                            <input type="radio" id="nao" name="quarto-cama-infantil" value="false">
+                                            <label for="nao">Não</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="dados-adicionais-preferencias">
                                     <p>Preferências da hospedagem</p>
-                                    <input type="checkbox" id="piscina" name="preferencias" value="piscina">
-                                    <label for="piscina">Piscina</label>
-                                    <input type="checkbox" id="wifi" name="preferencias" value="wifi">
-                                    <label for="wifi">Wi-Fi</label>
-                                    <input type="checkbox" id="garagem" name="preferencias" value="garagem">
-                                    <label for="garagem">Garagem</label>
-                                    <input type="checkbox" id="suite" name="preferencias" value="suite">
-                                    <label for="suite">Suite</label>
+                                    <div class="caixa-preferencias-dados">
+                                        <div class="preferencias-dado">
+                                            <input type="checkbox" id="piscina" name="preferencias" value="piscina">
+                                            <label for="piscina">Piscina</label>
+                                        </div>
+                                        <div class="preferencias-dado">
+                                            <input type="checkbox" id="wifi" name="preferencias" value="wifi">
+                                            <label for="wifi">Wi-Fi</label>
+                                        </div>
+                                        <div class="preferencias-dado">
+                                            <input type="checkbox" id="garagem" name="preferencias" value="garagem">
+                                            <label for="garagem">Garagem</label>
+                                        </div>
+                                        <div class="preferencias-dado">
+                                            <input type="checkbox" id="suite" name="preferencias" value="suite">
+                                            <label for="suite">Suite</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <button id="form-botao">Solicitar orçamento</button>
@@ -88,7 +108,7 @@
                 </div>
             </section>
             <section id="secao-ofertas">
-            <div class="layout-padrao">
+            <div class=" caixa-secao-ofertas layout-padrao">
 
                 <h2>Ofertas</h2>
                 <p>Com até <span>50%</span> de desconto.</p>
@@ -97,19 +117,19 @@
                         <p>Rio de Janeiro</p>
                     </div>
                     <div class="ofertas-secundarias">
-                        <div>
-                            <div class="oferta">
+                        <div class="caixa1-ofertas-secundarias">
+                            <div class="ofertas oferta1">
                                 <p>Manaus</p>
                             </div>
-                            <div class="oferta">
+                            <div class="ofertas oferta2">
                                 <p>São Paulo</p>
                             </div>
                         </div>
-                        <div>
-                            <div class="oferta">
+                        <div class="caixa2-ofertas-secundarias">
+                            <div class="ofertas oferta3">
                                 <p>Rio de Janeiro</p>
                             </div>
-                            <div class="oferta">
+                            <div class="ofertas oferta4">
                                 <p>Maranhão</p>
                             </div>
                         </div>
