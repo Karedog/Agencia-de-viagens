@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* -------------------- TIPOGRAFIA -------------------- */
+h1 {
+  color: rgb(40, 40, 126);
+  font-size: 2.1rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1rem;
+}
+
+/* -------------------- LAYOUT GERAL -------------------- */
+.layout-padrao {
+  max-width: 70rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  width: 100%;
+  background-color: white;
+}
+
+header .caixa-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5rem;
+  height: 4rem;
+}
+
+header img,
+#secao-form .form-header img {
+  height: 90%;
+}
+
+/* -------------------- FORMULÁRIO -------------------- */
+#secao-form {
+  padding: 3rem 0;
+  background: url('../assets/imagens/bahia.jpg') center/cover no-repeat;
+}
+
+#secao-form .caixa-form {
+  background-color: white;
+}
+
+#secao-form .form-header {
+  background-color: rgb(40, 40, 126);
+  color: white;
+  padding: 0.7rem;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+#secao-form .form-header img {
+  transform: rotate(315deg);
+}
+
+#secao-form .form-body form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+form label,
+form input,
+form select,
+form p {
+  width: 100%;
+}
+
+form input,
+form select {
+  height: 2.5rem;
+  padding: 0 0.5rem;
+}
+
+form label,
+form p {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+}
+
+#secao-form form .form-dados-usuario,
+#secao-form form .form-dados-viagem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#secao-form .dados-viagem-data,
+#secao-form .dados-viagem-local {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+#secao-form .dados-viagem-data div,
+#secao-form .dados-viagem-local div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dados-adicionais-preferencias,
+.dados-adicionais-infantil {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-dados-adicionais input {
+  width: 1rem;
+  height: 1rem;
+}
+
+.caixa-preferencias-dados,
+.caixa-infantil-dados {
+  display: flex;
+  gap: 1rem;
+}
+
+.preferencias-dado,
+.infantil-dado {
+  width: 7rem;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+form button {
+  width: 10rem;
+  height: 2rem;
+  background-color: rgb(40, 40, 126);
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+/* -------------------- MAIN / SEÇÕES -------------------- */
+main {
+  background-color: rgb(230, 230, 230);
+}
+
+#secao-ofertas,
+#secao-natureza {
+  padding: 1.5rem 0;
+}
+
+.caixa-secao-ofertas,
+.caixa-secao-natureza {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* -------- Ofertas -------- */
+.caixa-ofertas {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.oferta-principal {
+  background: url('../assets/imagens/rio.jpg') center/cover no-repeat;
+  height: 27rem;
+  min-width: 25rem;
+  width: calc(50% - 1rem);
+  display: flex;
+  align-items: flex-end;
+}
+
+.ofertas-secundarias {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 25rem;
+  height: 27rem;
+  width: calc(50% - 1rem);
+}
+
+.ofertas-secundarias .caixa1-ofertas-secundarias,
+.ofertas-secundarias .caixa2-ofertas-secundarias {
+  display: flex;
+  gap: 1rem;
+  height: 50%;
+}
+
+.ofertas-secundarias .ofertas {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+}
+
+.oferta1 {
+  background-image: url('../assets/imagens/manaus.jpg');
+}
+.oferta2 {
+  background-image: url('../assets/imagens/saopaulo.jpg');
+}
+.oferta3 {
+  background-image: url('../assets/imagens/niteroi.jpg');
+}
+.oferta4 {
+  background-image: url('../assets/imagens/maranhao.jpg');
+}
+
+.oferta-principal p,
+.ofertas p {
+  width: 100%;
+  padding: 0 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* -------- Natureza -------- */
+.card-natureza {
+  display: flex;
+  flex-direction: column;
+  min-width: 25rem;
+  width: calc(50% - 1rem);
+}
+
+.card-natureza img {
+  width: 100%;
+}
+
+.card-natureza div {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  background-color: rgb(40, 40, 126);
+  padding: 1.5rem;
+  color: white;
+}
+
+.rodape-caixa {
+  display: flex;
+  justify-content: space-between;
+}
+
+.caixa-contato,
+.caixa-social {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.caixa-contato a,
+.caixa-social a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.caixa-contato img,
+.caixa-social img {
+  height: 1.2rem;
+}
+
+/* -------------------- RESPONSIVO -------------------- */
+@media screen and (max-width: 1100px) {
+  .rodape-caixa {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .caixa-ofertas,
+  .ofertas-secundarias,
+  .card-natureza {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .oferta-principal,
+  .ofertas-secundarias,
+  .card-natureza div {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    padding: 1rem;
+  }
+
+  .oferta-principal,
+  .ofertas-secundarias,
+  .card-natureza {
+    min-width: 100%;
+    width: 100%;
+  }
+}
