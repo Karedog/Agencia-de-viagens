@@ -331,9 +331,13 @@ footer{
         width: 330px;
         margin: auto 0;
     }
+    #secao-form .form-header{
+    padding:0.7rem;
+    height: 50px;
+    }
 }
 @media screen and (max-width: 540px) {
- 
+    
     h3{
         font-size: 1.6rem;
     }

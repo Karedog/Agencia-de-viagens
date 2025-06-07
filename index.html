@@ -22,25 +22,25 @@
                         <p>Solicite um orçamento</p>
                     </div>
                     <div class="form-body">
-                        <form action="#">
+                        <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/" method="post">
                             <h2>Informe seus dados</h2>
                             <div class="form-dados-usuario">
                                 <label for="nome" >Nome</label>
-                                <input type="text" id="nome" placeholder="Nome completo" required>
+                                <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
                                 <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="Email para contato" required>
-                                <label for="telefone">Celular</label>
-                                <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required >
+                                <input type="email" id="email" name="email" placeholder="Email para contato" required>
+                                <label for="celular">Celular</label>
+                                <input type="tel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX" required >
                             </div>
                             <div class="form-dados-viagem">
                                 <div class="dados-viagem-data">
                                     <div>
-                                        <label for="data-ida">Data da ida</label>
-                                        <input type="date" id="data-ida"required>
+                                        <label for="partida">Data da ida</label>
+                                        <input type="date" id="partida" name="partida">
                                     </div>
                                     <div>
-                                        <label for="data-volta">Data da volta</label>
-                                        <input type="date" id="data-volta" required>
+                                        <label for="chegada">Data da volta</label>
+                                        <input type="date" id="chegada" name="chegada" required>
                                     </div>
                                 </div>
                                 <div class="dados-viagem-local">
@@ -71,11 +71,11 @@
                                     <p>Quarto com cama infantil</p>
                                     <div class="caixa-infantil-dados">
                                         <div class="infantil-dado">
-                                            <input type="radio" id="sim" name="quarto-cama-infantil" value="true">
+                                            <input type="radio" id="sim" name="infantil" value="true">
                                             <label for="sim">Sim</label>
                                         </div>
                                         <div class="infantil-dado">
-                                            <input type="radio" id="nao" name="quarto-cama-infantil" value="false">
+                                            <input type="radio" id="nao" name="infantil" value="false">
                                             <label for="nao">Não</label>
                                         </div>
                                     </div>
@@ -84,19 +84,19 @@
                                     <p>Preferências da hospedagem</p>
                                     <div class="caixa-preferencias-dados">
                                         <div class="preferencias-dado">
-                                            <input type="checkbox" id="piscina" name="preferencias" value="piscina">
+                                            <input type="checkbox" id="piscina" name="preferencias[]" value="piscina">
                                             <label for="piscina">Piscina</label>
                                         </div>
                                         <div class="preferencias-dado">
-                                            <input type="checkbox" id="wifi" name="preferencias" value="wifi">
+                                            <input type="checkbox" id="wifi" name="preferencias[]" value="wifi">
                                             <label for="wifi">Wi-Fi</label>
                                         </div>
                                         <div class="preferencias-dado">
-                                            <input type="checkbox" id="garagem" name="preferencias" value="garagem">
+                                            <input type="checkbox" id="garagem" name="preferencias[]" value="garagem">
                                             <label for="garagem">Garagem</label>
                                         </div>
                                         <div class="preferencias-dado">
-                                            <input type="checkbox" id="suite" name="preferencias" value="suite">
+                                            <input type="checkbox" id="suite" name="preferencias[]" value="suite">
                                             <label for="suite">Suite</label>
                                         </div>
                                     </div>
