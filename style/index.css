@@ -102,6 +102,7 @@ form label, form p{
 }
 #secao-form .dados-viagem-data,
 #secao-form .dados-viagem-local{
+    gap: 1rem;
     display: flex;
     width: 100%;
 
