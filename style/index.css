@@ -104,7 +104,7 @@ form label, form p{
 #secao-form .dados-viagem-local{
     display: flex;
     width: 100%;
-    gap: 1.5rem;
+
 }
 #secao-form form .dados-viagem-data div,
 #secao-form form .dados-viagem-local div{
@@ -193,13 +193,13 @@ form button{
     flex-direction: column;
     min-width: 25rem;
     width: calc(50% - 1rem);
-    gap: 2rem;
+    gap: 1rem;
 }
 .ofertas-secundarias .caixa1-ofertas-secundarias, 
 .ofertas-secundarias .caixa2-ofertas-secundarias{
     display: flex;
     height: 50%;
-    gap: 1rem; 
+    gap: 2rem; 
 }
 .ofertas-secundarias .ofertas{
     height: 100%;
@@ -233,11 +233,10 @@ form button{
     flex-direction: column;
 }
 .card-natureza div{
-
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: white;
     width: 100%;
 }
@@ -268,7 +267,8 @@ footer{
 .caixa-contato img,
 .caixa-social img{
     height: 1.2rem;
-    
+   
+
 }
 @media screen and (max-width: 1100px) {
     .caixa-secao-ofertas{
@@ -296,7 +296,7 @@ footer{
     }
     .ofertas-secundarias .ofertas, .oferta-principal{
         width: 100%;
-        height: 13rem;  
+        height: 16rem;  
         min-width: 10rem;
         
     }
@@ -304,5 +304,70 @@ footer{
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+    }
+    .ofertas-secundarias{
+        gap: 2rem;
+    }
+    .card-natureza{
+        width: 100%;
+        min-width: 25rem;
+        display: flex;
+        flex-direction: column;
+    }
+    p,label, input,button{
+        font-size: 1.3rem;
+    }
+    h3{
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 1.9rem;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    .caixa-social, 
+    .caixa-contato{
+        width: 330px;
+        margin: auto 0;
+    }
+}
+@media screen and (max-width: 540px) {
+ 
+    h3{
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 1.9rem;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    .caixa-social, 
+    .caixa-contato{
+        width: 330px;
+        
+    }
+    .dados-viagem-data,
+    .dados-viagem-local,
+    .caixa-preferencias-dados,
+    .caixa-infantil-dados{
+        flex-direction: column;
+    }
+    #secao-form form .dados-viagem-data div,
+    #secao-form form .dados-viagem-local div{
+        flex-direction: column;
+        width: 100%;
+        gap: 0rem;
+    }
+    .caixa-preferencias-dados,
+    .caixa-infantil-dados{
+        gap: 0.5rem;
+    }
+    #form-botao{
+        width: 100%;
+        margin: auto 0;
+        height: 2.5rem;
+        margin-top: 1rem;
     }
 }
