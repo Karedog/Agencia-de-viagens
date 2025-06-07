@@ -288,19 +288,21 @@ footer{
     #secao-natureza .layout-padrao{
         padding: 0 1.5rem;
     }
+    .ofertas-secundarias,
+    .oferta-principal{
+        min-width: 0;
+    }
     .ofertas-secundarias .caixa1-ofertas-secundarias, 
     .ofertas-secundarias .caixa2-ofertas-secundarias{
         display: flex;
         height: 100%;
         flex-direction: column;
         width: 100%;
-        min-width: 10rem;
     }
-    .ofertas-secundarias .ofertas, .oferta-principal{
+    .ofertas-secundarias .ofertas,
+    .oferta-principal{
         width: 100%;
-        height: 16rem;  
-        min-width: 10rem;
-        
+        height: 16rem;
     }
     .rodape-caixa{
         flex-direction: column;
@@ -312,7 +314,7 @@ footer{
     }
     .card-natureza{
         width: 100%;
-        min-width: 25rem;
+        min-width: 15rem;
         display: flex;
         flex-direction: column;
     }
